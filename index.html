@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div><img id = "heading" src="img_list/Sound Sailors.png"></div>
+    <div class="all" id = "all">
+        <div>
+            <div class = "head_list">
+                <div class = "search_group" id = "search_group">
+                    
+                    <div>
+                        <form>
+                            
+                            <input type="text" id="search_input" nane="search_input">
+                        
+                        </form>
+                    </div>
+                    <div><button id="button">Search</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_menu">
+            
+            <div class="player" id="player">
+                <div>
+                    
+                    <div id="music_player_icon" class="music_player_icon"><img src="img_list/Daku.jpg" height="300px" width="280px" id="music_image"></div>
+                    
+                    <!-- <embed src="/music_list/Leja Leja.m4a" loop="false" autostart="false" width="2" height="4"> -->
+                </div>
+                
+            </div>
+            
+            <div class="music_list" id="music_list"> 
+                <div><button onclick="change_song('https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/preview','img_list/Daku.jpg')">Daku</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1U5Szhcudb2VRHafz2k8LfeiYLj3Yc2ut/preview' , 'img_list/Destiny.jpeg')">Destiny</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1AJDeHjFdcNzwN6-Rlgn3FXLWUaOeisFn/preview','img_list/Maan Meri Jaan.jpeg')">Maan Meri Jaan</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1rB6G64ynmH1F8azDanhYurcheOiOjuNb/preview','img_list/Milo Na Tum.jpeg')">Milo Na Tum</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1EI5U7rbLXxNf29oi_jCCLxSb_s9CbZ-4/preview','img_list/Naah.jpg')">Naah</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/17Tw0ywqiCPJw0SMHdgxAa7imOxRG_Xf-/preview','img_list/On Top.jpg')">On Top</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/14D6Tw94IaPOyTlztWh6_DXGbEDeXSAYo/preview','img_list/Pasoori.png')">Pasoori</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1jyaMbUv_V2kmUb1S7pz6XBz66Awz5NfL/preview','img_list/Vikram.jpg')">Vikram - Title Track</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/12bvoz3ozRXOwhLSYiKtW77ZrwvkmV2wR/preview','img_list/Zara Thehro.jpg')">Zara Thehro</button></div>
+                <div><button onclick="change_song('https://cumailin-my.sharepoint.com/personal/21bcs11403_cuchd_in/_layouts/15/embed.aspx?UniqueId=135ff2b0-3f53-4c9a-ba0e-6dffeb14f7f7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create','img_list/Zara Thehro.jpg')">This Game</button></div>
+            </div>
+            
+        </div>
+        <div>
+            <iframe src="https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/preview" 
+            id="music_player" controls autoplay></iframe>
+            <div>
+                <button onclick="stop_audio()">Stop</button>
+                <button onchange="start_audio()">Strat</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>
